@@ -11,17 +11,16 @@ import helmet from 'helmet';
 
 dotenv.config();
 
-
-//Creates an express app and assigns it to app variable
+//creates an express app and assigns it to app variable
 const app = express();
 
 const port = process.env.PORT;
 
 app.use(cors());
 
-//Parse JSON bodies
+//parse JSON bodies
 app.use(express.json());
-//Parse URL-encoded bodies
+//parse URL-encoded bodies
 app.use(express.urlencoded({ extended: true }));
 
 
@@ -43,7 +42,7 @@ app.get('/', (req: Request, res: Response) => {
 
 app.use('/', [albumsRouter, artistsRouter]);
 
-//This method binds the app with the specified port(3000) to listen for any connections.
+//this method binds the app with the specified port(3000) to listen for any connections.
 app.listen(port, () => {
 
     console.log(`Example app listening at http://localhost:${port}`)
