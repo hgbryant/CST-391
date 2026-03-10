@@ -74,7 +74,7 @@ VerseList --> Footer
 ```mermaid
 flowchart TD
 
-H[Add New Inspirational Verse]
+H[Add New Verse]
 
 F[Form Container]
 
@@ -156,7 +156,7 @@ VerseController --> Verse
 
 ## API Example API Requests
 ```json
-  GET /presidents
+  GET /verses
   Response:
   [
     {
