@@ -1,7 +1,7 @@
 # Activity 3
 
 - Author:  Hunter Bryant
-- Date:  22 March 2026
+- Date:  25 March 2026
 
 ## Introduction
 
@@ -18,14 +18,25 @@
 
 - Captioned screenshots with explanations of each page
      - The initial application page
+     ![](images/act4.png)
+
      - GCU homepage
+     ![](images/img3.png)
+
      - Create Album page
+     ![](images/act2.png)
+
      - Artist List page showing your added album/artist
+     ![](images/act4.png) 
+
+     ![](images/img4.png)
+
      - About Box
+     ![](images/act3.png)
 
 ## Conclusion
 
-- In this assignment I learned to use Angular to help create a simple webpage. I had some trouble with getting my links to work and open properly. At the time of submission I have all of the code figured out in the backend but I was not able to get the html to display onto the localhost page. I was able to do this earlier as show by image above but once I fixed some other issues HTML stopped displaying. I am sure that this is a simple fix but I have not been able to find it. I would definitely say that this is not my proudest work. 
+- Most of the issues have been resolved. I did not update the code in activity 3, since I have all of the correct code in activity 4 which is already submitted. 
 
 ## Troubleshooting
 
