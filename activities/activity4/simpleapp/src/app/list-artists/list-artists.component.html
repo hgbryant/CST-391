@@ -1,0 +1,18 @@
+<div class="container mt-3">
+  <h2>Artists</h2>
+
+  <ul class="list-group">
+    <li
+      *ngFor="let artist of artists"
+      class="list-group-item"
+      (click)="onSelectArtist(artist)"
+      [class.active]="artist === selectedArtist">
+      {{ artist }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedArtist" class="mt-3">
+    <h4>Albums by {{ selectedArtist }}</h4>
+    <app-list-albums [artist]="selectedArtist"></app-list-albums>
+  </div>
+</div>
