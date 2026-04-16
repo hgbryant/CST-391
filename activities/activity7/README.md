@@ -14,18 +14,11 @@ cd activity1/MusicAPI
 npm start
 ```
 
-![Start Datasource Server](startDatasourceServer.png)
 
 ```
 cd activity7/music
 npm start
 ```
-
-![Start Activity 7](startActivity7.png)
-
-## Test Links
-
-![Localhost Port 5000](localhost5000.png)
 
 ## Deliverables
 
