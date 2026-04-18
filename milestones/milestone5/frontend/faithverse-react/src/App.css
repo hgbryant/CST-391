@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+}
+
+/* =========================
+   HEADER (FaithVerse)
+========================= */
+.appHeader {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 15px 20px;
+  background: #1f2d3a;
+  color: white;
+  text-align: left;
+}
+
+/* =========================
+   NAVBAR (Home / Add Verse)
+========================= */
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: #2c3e50;
+  padding: 12px 20px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: 0.2s;
+}
+
+.navLink:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   VERSE LAYOUT (UPDATED GRID)
+========================= */
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.verseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.verse-title {
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.verse-text {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #3498db;
+  color: white;
+}
+
+.delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.favorite {
+  background: #f1c40f;
+  color: black;
+}
+
+.favorite.active {
+  background: #f39c12;
+  color: white;
+}
+
+.formInput {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  transition: 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+textarea.formInput {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.suggestionsBox {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: -5px;
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suggestionItem {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
+}
+
+.searchBarInline {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 220px;
+}

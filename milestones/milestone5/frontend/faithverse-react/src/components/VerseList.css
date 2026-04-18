@@ -1,0 +1,87 @@
+.page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.reference {
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #3498db;
+  color: white;
+}
+
+.delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.filterBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.favorite {
+  background: #f1c40f;
+  color: black;
+}
+
+.favorite.active {
+  background: #f39c12;
+  color: white;
+}
